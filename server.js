@@ -29,7 +29,7 @@ const server = http.createServer(async (req, res) => {
   */
   for (const item of data.toArray()) {
     res.write(item);
-    await delay(2); // pausa de 2 segundos
+    await delay(2);
   }
 
   res.end(); // Essa função finaliza a comunicação com o cliente
